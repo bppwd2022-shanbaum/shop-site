@@ -1,0 +1,31 @@
+Started GET "/" for 127.0.0.1 at 2021-10-06 10:48:34 -0400
+  [1m[35m (12.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.2ms | Allocations: 395)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 5bf021ecda2035a75358
+Version: webpack 4.46.0
+Time: 22603ms
+Built at: 10/06/2021 10:49:07 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-af2cb6fe68da642a9d89.js   1.19 MiB  application  [emitted] [immutable]  application
+js/application-af2cb6fe68da642a9d89.js.map    1.2 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-af2cb6fe68da642a9d89.js js/application-af2cb6fe68da642a9d89.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 606 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 66 hidden modules
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve '../stylesheets/application' in '/home/eshanbaum/Desktop/shop_site/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 11:0-36
+
+  Rendered layout layouts/application.html.erb (Duration: 32602.5ms | Allocations: 15137)
+Completed 200 OK in 32657ms (Views: 32621.3ms | ActiveRecord: 0.0ms | Allocations: 19202)
+
+
